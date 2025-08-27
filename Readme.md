@@ -29,7 +29,41 @@ It includes a full **ML pipeline**, model training, evaluation, and saving the t
 ├── data/ 
 ├── model/ 
 ├── index.ipynb # 
-├── predict.py # Script to load & predict
 └── README.md # Project documentation
 
 ```
+
+---
+
+## 🚀 How to Run
+
+### 1️⃣ Clone the repository
+
+```
+git clone https://github.com/Sidabd17/Fake-News-Detection.git
+```
+---
+
+### 2️⃣ Install dependencies
+```
+pip install -r requirements.txt
+```
+
+---
+
+## 🛠️ Usage of Saved Model
+
+You can load the trained model in any future script:
+```
+import joblib
+
+# Load model
+pipeline = joblib.load("model/log_reg_pipeline.pkl")
+
+# Predict on new data
+y_pred = pipeline.predict(new_data)
+```
+---
+
+## Author 
+**Md Sajid**
